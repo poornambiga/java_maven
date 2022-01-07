@@ -1,8 +1,8 @@
-def buildJar() {
+def buildapp() {
     echo "building the application..."
 } 
 
-def buildImage() {
+def testApp() {
     echo "building the docker image..."
      }
 } 
