@@ -23,8 +23,13 @@ pipeline {
             }
         }
         stage("build image") {
-            steps {
-                script {
+            when{
+                expression{
+                    BRANCH_NAME == "main"
+                }
+            }
+             steps {
+               script {
                     gv.buildImage()
                 }
             }
